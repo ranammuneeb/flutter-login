@@ -63,9 +63,15 @@ class _loginpageState extends State<loginpage> with SingleTickerProviderStateMix
             child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                new FlutterLogo(
-                  size: _animation.value*90,
-                  curve: Curves.bounceInOut,
+                // new FlutterLogo(
+                //   size: _animation.value*90,
+                //   curve: Curves.bounceInOut,
+                // ),
+                Image.asset(
+                  'assets/logo.png',
+
+                  width: _animation.value * 130, // Animated width
+                  height: _animation.value * 130, // Animated height
                 ),
                 new Container(
                   padding: EdgeInsets.all(70.0),
